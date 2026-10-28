@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#eaf5f1" />
+  <meta name="description" content="صيدليتي - واجهة تعليمية للأدوية والكيسات والتقدم" />
+  <title>صيدليتي | التعلم الدوائي</title>
+  <link rel="stylesheet" href="/www/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48"><path d="M24 7v34M7 24h34" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2.5"/></svg>
+        </div>
+        <div><h1>صيدليتي</h1><p>خطوتك نحو معرفة دوائية أفضل</p></div>
+      </div>
+      <button class="profile-button" aria-label="الملف الشخصي" title="الملف الشخصي">👤</button>
+    </header>
+
+    <main>
+      <section class="welcome-card">
+        <div class="welcome-copy">
+          <span class="eyebrow">مساحة التعلّم الخاصة بك</span>
+          <h2>أهلاً بيك،<br><strong>خلّينا نتعلّم شي جديد اليوم</strong></h2>
+          <p>معلومات دوائية، حالات عملية، ومتابعة لتقدّمك بمكان واحد.</p>
+        </div>
+        <div class="medical-art" aria-hidden="true">
+          <div class="circle circle-one"></div><div class="circle circle-two"></div>
+          <div class="pill"><span></span></div>
+          <div class="plus">+</div>
+        </div>
+      </section>
+
+      <section class="section-heading">
+        <div><span class="eyebrow">ابدأ من هنا</span><h2>أقسام التطبيق</h2></div>
+        <span class="section-dot"></span>
+      </section>
+
+      <section class="feature-grid" aria-label="أقسام التطبيق">
+        <button class="feature-card medicines" data-page="medicines">
+          <span class="feature-icon">💊</span><span class="feature-text"><strong>الأدوية</strong><small>معلومات واستخدامات دوائية</small></span><span class="arrow">←</span>
+        </button>
+        <button class="feature-card cases" data-page="cases">
+          <span class="feature-icon">🩺</span><span class="feature-text"><strong>الكيسات</strong><small>حالات سريرية للتدريب</small></span><span class="arrow">←</span>
+        </button>
+        <button class="feature-card progress" data-page="progress">
+          <span class="feature-icon">📈</span><span class="feature-text"><strong>التقدم</strong><small>تابع إنجازك وتطوّرك</small></span><span class="arrow">←</span>
+        </button>
+        <button class="feature-card developers" data-page="developers">
+          <span class="feature-icon">👨‍💻</span><span class="feature-text"><strong>المبرمجين</strong><small>عن فريق تطوير التطبيق</small></span><span class="arrow">←</span>
+        </button>
+      </section>
+
+      <section class="daily-card">
+        <div class="daily-symbol">✦</div>
+        <div><h3>تذكّر دائماً</h3><p>التعلّم المستمر يصنع فرقاً كبيراً في الممارسة الصيدلانية.</p></div>
+      </section>
+      <p class="disclaimer">محتوى تعليمي أولي — لا يُغني عن المراجع الطبية المعتمدة أو التقييم السريري.</p>
+    </main>
+
+    <nav class="bottom-nav" aria-label="التنقل الرئيسي">
+      <button class="nav-item active" data-page="home"><span>⌂</span><small>الرئيسية</small></button>
+      <button class="nav-item" data-page="medicines"><span>▤</span><small>الأدوية</small></button>
+      <button class="nav-item" data-page="cases"><span>♡</span><small>الكيسات</small></button>
+      <button class="nav-item" data-page="progress"><span>◷</span><small>تقدمي</small></button>
+    </nav>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/www/app.js"></script>
+</body>
+</html>
