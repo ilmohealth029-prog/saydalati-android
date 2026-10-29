@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap');
+:root{font-family:"Cairo",Tahoma,Arial,sans-serif;color:#193b3b;background:#f4f8f6;font-synthesis:none;text-rendering:optimizeLegibility}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:radial-gradient(ellipse at top left,#e4f3ed 0,transparent 38%),#f4f8f6}
+button{font:inherit;cursor:pointer}
+.app-shell{width:min(100%,600px);min-height:100vh;margin:auto;background:#f8fbf9;position:relative;padding:22px 20px 105px;overflow:hidden;box-shadow:0 0 50px #163c3c0a}
+.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:25px}
+.brand{display:flex;align-items:center;gap:11px}.brand-mark{width:48px;height:48px;background:#d9eee6;color:#16836f;border-radius:16px;display:grid;place-items:center}.brand-mark svg{width:31px;height:31px}
+.brand h1{font-size:21px;margin:0;font-weight:800;letter-spacing:-.5px}.brand p{font-size:11px;color:#79918a;margin:2px 0 0}
+.profile-button{border:1px solid #e2ece7;background:#fff;width:44px;height:44px;border-radius:15px;font-size:20px;box-shadow:0 5px 16px #244f3e08}
+.welcome-card{min-height:205px;border-radius:27px;padding:25px 22px;background:linear-gradient(120deg,#176f66,#258f7d);color:#fff;position:relative;overflow:hidden;display:flex;align-items:center;box-shadow:0 15px 30px #176f6626}
+.welcome-copy{position:relative;z-index:2;max-width:78%}.eyebrow{font-size:11px;font-weight:700;letter-spacing:.2px;color:#73b5a5}.welcome-card .eyebrow{color:#b8e5d8}
+.welcome-card h2{font-size:21px;line-height:1.65;margin:9px 0 8px;font-weight:500}.welcome-card h2 strong{font-weight:800}.welcome-card p{font-size:11px;line-height:1.9;color:#d6eee7;margin:0;max-width:290px}
+.medical-art{position:absolute;left:-4px;top:0;width:160px;height:100%;opacity:.95}.circle{position:absolute;border:1px solid #ffffff26;border-radius:50%}.circle-one{width:145px;height:145px;left:10px;top:35px}.circle-two{width:105px;height:105px;left:30px;top:55px;background:#ffffff08}
+.pill{position:absolute;width:75px;height:33px;left:30px;top:91px;transform:rotate(-38deg);border:3px solid #d4f0e6;border-radius:22px;background:#fff;box-shadow:0 8px 18px #0a4b4438;overflow:hidden}.pill span{position:absolute;right:0;top:0;width:50%;height:100%;background:#b6e2d2;border-left:2px solid #d4f0e6}.plus{position:absolute;left:108px;top:43px;width:28px;height:28px;border-radius:10px;background:#b6e2d2;color:#176f66;display:grid;place-items:center;font-size:23px;font-weight:700}
+.section-heading{display:flex;align-items:end;justify-content:space-between;margin:29px 2px 15px}.section-heading h2{font-size:18px;margin:2px 0 0;font-weight:800}.section-heading .eyebrow{color:#81a399}.section-dot{width:8px;height:8px;background:#e6b96a;border-radius:50%;margin-bottom:9px}
+.feature-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.feature-card{border:1px solid #e8efeb;border-radius:21px;background:#fff;min-height:142px;text-align:right;padding:17px 15px;display:flex;flex-direction:column;align-items:flex-start;position:relative;box-shadow:0 7px 18px #254c3d07;transition:transform .15s,border-color .15s}
+.feature-card:active{transform:scale(.98)}.feature-icon{width:47px;height:47px;border-radius:16px;display:grid;place-items:center;font-size:24px;margin-bottom:13px}.feature-text{display:flex;flex-direction:column;gap:3px}.feature-text strong{font-size:14px;color:#254744}.feature-text small{font-size:10px;color:#8b9f98}.arrow{position:absolute;left:14px;bottom:16px;color:#8da69e;font-size:16px}
+.medicines .feature-icon{background:#e4f4ec}.cases .feature-icon{background:#e7effb}.progress .feature-icon{background:#fff2dc}.developers .feature-icon{background:#eee9fb}
+.daily-card{display:flex;align-items:center;gap:13px;margin-top:21px;padding:16px;border-radius:20px;background:#edf6f1;border:1px solid #e0eee7}.daily-symbol{width:39px;height:39px;border-radius:13px;background:#d5ebe0;color:#25836f;display:grid;place-items:center;font-size:23px;flex-shrink:0}.daily-card h3{font-size:13px;margin:0 0 3px}.daily-card p{font-size:10px;line-height:1.8;color:#6c8980;margin:0}
+.disclaimer{text-align:center;color:#9aada5;font-size:9px;margin:14px 8px 0;line-height:1.8}
+.bottom-nav{position:fixed;z-index:5;bottom:0;left:50%;transform:translateX(-50%);width:min(100%,600px);height:78px;background:#ffffffed;backdrop-filter:blur(16px);border-top:1px solid #e7efeb;display:flex;justify-content:space-around;align-items:center;padding:6px 12px max(6px,env(safe-area-inset-bottom));}
+.nav-item{border:0;background:transparent;color:#9aafa7;display:flex;flex-direction:column;align-items:center;gap:3px;min-width:55px;padding:5px 8px;border-radius:13px}.nav-item span{font-size:22px;line-height:1.2}.nav-item small{font-size:9px}.nav-item.active{color:#18826f}.nav-item.active span{background:#e2f3eb;border-radius:11px;padding:3px 13px}
+.toast{position:fixed;z-index:10;bottom:91px;left:50%;transform:translate(-50%,12px);opacity:0;pointer-events:none;background:#183f3a;color:#fff;padding:10px 17px;border-radius:14px;font-size:12px;white-space:nowrap;box-shadow:0 8px 22px #123a3026;transition:.2s}.toast.show{opacity:1;transform:translate(-50%,0)}
+@media(min-width:520px){.app-shell{padding-top:28px}.welcome-card{min-height:220px}.feature-card{min-height:155px}.feature-text strong{font-size:15px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
